@@ -6,10 +6,10 @@
 #### Website Configuration
 
 ### check version
-Application Name : Laravel  
-Laravel Version : 10.47.0
-PHP Version : 8.1.0
-Composer Version : 2.5.5
+* Application Name : Laravel  
+* Laravel Version : 10.47.0
+* PHP Version : 8.1.0
+* Composer Version : 2.5.5
 
 Create new .env file at root folder same with same content of .env.example file.
 Need to change following things at .env file as per our requirement [/.env](../master/.env) :
