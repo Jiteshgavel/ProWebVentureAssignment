@@ -5,6 +5,12 @@
 ------------
 #### Website Configuration
 
+### check version
+Application Name ......................................................................................................................... Laravel  
+Laravel Version .......................................................................................................................... 10.47.0
+PHP Version ................................................................................................................................ 8.1.0
+Composer Version ........................................................................................................................... 2.5.5
+
 Create new .env file at root folder same with same content of .env.example file.
 Need to change following things at .env file as per our requirement [/.env](../master/.env) :
 
@@ -18,6 +24,7 @@ Need to change following things at .env file as per our requirement [/.env](../m
 | DB_USERNAME | Database user name | 
 | DB_PASSWORD | Database password |  
 
+
 #### Run following commands for install required library 
 * Note: before running following commands delete composer.lock file if exist.
 * composer install 
@@ -25,16 +32,6 @@ Need to change following things at .env file as per our requirement [/.env](../m
 * php artisan migrate
 * php artisan db:seed
 
-#### Admin login credentials
-* http://localhost:8000/admin
-* email : admin@gmail.com
-* password : admin@123
+#### 
+* http://localhost:8000/
 
-
-####  Implementation
-* The complete project structure follows Laravel's MVC conventions.
-* For CRUD operations, a resource route is used.
-* For data visualization, the JavaScript charting library Chart.js is used.
-* For bulk data upload and export, Maatwebsite/Laravel-Excel package is used.
-* For data tables, the Yajra/Laravel-datatables-oracle package is used.
-* For location information with an IP address, the Steve Bauman/location package is used.
