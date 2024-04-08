@@ -31,6 +31,7 @@ Need to change following things at .env file as per our requirement [/.env](../m
 * php artisan key:generate
 * php artisan migrate
 * php artisan db:seed
+* php artisan serve
 
 #### 
 * http://localhost:8000/
