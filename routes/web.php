@@ -2,6 +2,7 @@
 
 use App\Models\ActivityLog;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\GrapeJSController;
 use App\Http\Controllers\PixabayController;
 use App\Http\Controllers\Front\HomeController;
@@ -42,5 +43,13 @@ Route::controller(PixabayController::class)->group(function () {
 Route::controller(GoogleLoginController::class)->group(function () {
     Route::get('/auth/google/redirect', 'redirectToGoogle')->name('google.redirect');
     Route::get('auth/google/callback', 'handleGoogleCallback')->name('google.callback');
+});
+
+Route::controller(PageController::class)->group(function () {
+    Route::get('pages/create', 'create')->name('create');
+    Route::get('pages/{page}/editor', 'editor')->name('editor');
+    Route::get('pages', 'pages')->name('pages');
+    Route::get('pages/{id}/view', 'view')->name('editor.view');
+    Route::get('pages/{id}/delete', 'delete')->name('page.delete');
 });
 

@@ -7,6 +7,7 @@
         <ul>
           <li><a class="nav-link scrollto " href="/">Pixabay Image</a></li>
           <li><a class="nav-link scrollto" href="{{ route('video') }}">Pixabay Video</a></li>
+          <li><a class="nav-link scrollto" href="{{ route('pages') }}">Grapes js</a></li>
           <li><a class="getstarted scrollto" href="{{ route('google.redirect') }}">Login with Google</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

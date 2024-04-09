@@ -24,7 +24,7 @@ return [
     
     'routes' => [
         'middleware' => [
-            'web', 'auth',
+            'web'
         ],
     ],
 
